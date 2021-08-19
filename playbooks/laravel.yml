@@ -2,6 +2,7 @@
 - name: Deploy lemp server for laravel
   hosts: localhost
   roles:
+    - { role: settings,     tags: settings    }
     - { role: common,       tags: common      }
     - { role: php,          tags: php         }
     - { role: composer,     tags: composer    }

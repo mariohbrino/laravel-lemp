@@ -1,0 +1,5 @@
+---
+- name: Disable automatic brightness
+  become: yes
+  become_user: "{{ username }}"
+  shell: "gsettings set org.gnome.settings-daemon.plugins.power ambient-enabled false"
